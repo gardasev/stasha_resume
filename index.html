@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stanislava (Stasha) Gardasevic | Metadata Librarian & HCI-UX Researcher</title>
+
+    <!-- Primary Meta Tags -->
+    <meta
+      name="description"
+      content="Stanislava (Stasha) Gardasevic — Metadata Librarian and HCI-UX researcher (Ph.D., Communication & Information Sciences) at the University of Hawaiʻi at Mānoa. Information architecture, usable knowledge graphs, and metadata for digital collections."
+    />
+    <meta
+      name="keywords"
+      content="Stanislava Gardasevic, Stasha Gardasevic, Metadata Librarian, HCI, UX Research, Information Architecture, Knowledge Graphs, Digital Libraries, Neo4J, University of Hawaii, Manoa"
+    />
+    <meta name="author" content="Stanislava Gardasevic" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Stanislava (Stasha) Gardasevic | Metadata Librarian & HCI-UX Researcher" />
+    <meta property="og:description" content="Metadata Librarian & HCI-UX researcher — information architecture, usable knowledge graphs, and metadata for digital collections." />
+    <meta property="og:image" content="stasha.jpg" />
+    <meta property="profile:first_name" content="Stanislava" />
+    <meta property="profile:last_name" content="Gardasevic" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+
+    <!-- Scripts -->
+    <script src="data/profile.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Top Action & Navigation Bar -->
+    <nav class="top-nav" aria-label="Main Navigation">
+      <div class="nav-container">
+        <a href="#summary" class="nav-brand">
+          <span class="brand-dot"></span>
+          <span class="brand-name">Stasha Gardasevic</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#summary" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#publications" class="nav-link">Publications</a>
+          <a href="#awards" class="nav-link">Awards</a>
+          <a href="#education" class="nav-link">Education</a>
+        </div>
+
+        <div class="nav-actions">
+          <button id="themeToggle" class="btn-icon" title="Toggle Light / Dark Mode" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon theme-icon" aria-hidden="true"></i>
+          </button>
+          <button id="printBtn" class="btn-pill btn-primary print-button" title="Print or Save as PDF" aria-label="Print or Save Resume as PDF">
+            <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+            <span>Export PDF</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container main-content">
+      <!-- Hero / Profile Header Card -->
+      <header class="profile-card" id="profileHeader">
+        <div class="profile-avatar-wrapper">
+          <img
+            id="profileAvatar"
+            src="stasha.jpg"
+            alt="Stanislava (Stasha) Gardasevic"
+            class="profile-avatar"
+            width="120"
+            height="120"
+            onerror="this.style.display='none'"
+          />
+          <span class="status-indicator" title="Metadata Librarian"></span>
+        </div>
+
+        <div class="profile-details">
+          <div class="profile-title-group">
+            <h1 class="profile-name" id="profileName">Stanislava (Stasha) Gardasevic</h1>
+            <div class="status-badge" id="statusBadge">
+              <span class="pulse-dot"></span>
+              <span id="profileStatus">Metadata Librarian</span>
+            </div>
+          </div>
+
+          <h2 class="profile-subtitle" id="profileSubTitle">
+            Metadata Librarian · HCI-UX Researcher · Information Architect
+          </h2>
+
+          <div class="profile-meta">
+            <span class="meta-item">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span id="profileLocation">Honolulu, Hawaiʻi, USA</span>
+            </span>
+            <span class="meta-separator">•</span>
+            <span class="meta-item">
+              <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+              <span id="profileTagline">Ph.D., Communication &amp; Information Sciences</span>
+            </span>
+          </div>
+
+          <!-- Contact & Action Badges -->
+          <div class="contact-actions" id="contactActions">
+            <div class="contact-pill-group">
+              <a id="contactEmail" href="#" class="contact-badge">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <span class="contact-text">email</span>
+              </a>
+              <button class="copy-btn" id="copyEmailBtn" title="Copy email address" aria-label="Copy email">
+                <i class="fa-regular fa-copy" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="contact-pill-group" id="phoneGroup">
+              <a id="contactPhone" href="#" class="contact-badge">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                <span class="contact-text">phone</span>
+              </a>
+              <button class="copy-btn" id="copyPhoneBtn" title="Copy phone number" aria-label="Copy phone">
+                <i class="fa-regular fa-copy" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <!-- Social Links -->
+            <div id="socialLinks" class="social-links-group"></div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Key Metrics Bar -->
+      <section class="metrics-grid" id="metricsBar" aria-label="Career Highlights"></section>
+
+      <!-- Search & Filter Bar -->
+      <section class="filter-bar" id="filterBar" aria-label="Search and Filter Resume">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Filter by skill, method, or keyword (e.g. metadata, knowledge graph, Omeka, UX)…"
+            aria-label="Filter resume by skill or keyword"
+          />
+          <button id="clearSearchBtn" class="clear-search-btn" title="Clear filter" style="display: none;">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div id="activeFilterBadge" class="active-filter-badge" style="display: none;">
+          <span>Filtering: <strong id="filterKeyword"></strong></span>
+          <button id="resetFilterBtn" class="reset-filter-btn" title="Reset filter"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </section>
+
+      <!-- Main Resume Content -->
+      <main>
+        <!-- Professional Summary -->
+        <section class="content-section" id="summary" aria-labelledby="summaryHeading">
+          <div class="section-header">
+            <div class="section-icon"><i class="fa-solid fa-user-tie" aria-hidden="true"></i></div>
+            <h2 class="section-title" id="summaryHeading">Professional Summary</h2>
+          </div>
+          <div class="section-body card">
+            <p class="summary-text" id="aboutIntro"></p>
+          </div>
+        </section>
+
+        <!-- Skills & Methods -->
+        <section class="content-section" id="skills" aria-labelledby="skillsHeading">
+          <div class="section-header">
+            <div class="section-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+            <h2 class="section-title" id="skillsHeading">Skills &amp; Methods</h2>
+            <span class="section-hint">Click any skill to filter relevant experience</span>
+          </div>
+          <div class="skills-grid" id="skillsGrid"></div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="content-section" id="experience" aria-labelledby="experienceHeading">
+          <div class="section-header">
+            <div class="section-icon"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></div>
+            <h2 class="section-title" id="experienceHeading">Professional Experience</h2>
+          </div>
+          <div class="timeline-container" id="experienceTimeline"></div>
+        </section>
+
+        <!-- Selected Projects -->
+        <section class="content-section" id="projects" aria-labelledby="projectsHeading">
+          <div class="section-header">
+            <div class="section-icon"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></div>
+            <h2 class="section-title" id="projectsHeading">Selected Projects &amp; Ventures</h2>
+          </div>
+          <div class="projects-grid" id="projectsGrid"></div>
+        </section>
+
+        <!-- Publications -->
+        <section class="content-section" id="publications" aria-labelledby="publicationsHeading">
+          <div class="section-header">
+            <div class="section-icon"><i class="fa-solid fa-book-open" aria-hidden="true"></i></div>
+            <h2 class="section-title" id="publicationsHeading">Selected Peer-Reviewed Publications</h2>
+          </div>
+          <div class="pub-list" id="publicationsList"></div>
+        </section>
+
+        <!-- Presentations -->
+        <section class="content-section" id="presentations" aria-labelledby="presentationsHeading">
+          <div class="section-header">
+            <div class="section-icon"><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i></div>
+            <h2 class="section-title" id="presentationsHeading">Presentations &amp; Talks</h2>
+          </div>
+          <div class="grouped-grid" id="presentationsGrid"></div>
+        </section>
+
+        <!-- Awards & Grants -->
+        <section class="content-section" id="awards" aria-labelledby="awardsHeading">
+          <div class="section-header">
+            <div class="section-icon"><i class="fa-solid fa-trophy" aria-hidden="true"></i></div>
+            <h2 class="section-title" id="awardsHeading">Awards, Grants &amp; Fellowships</h2>
+          </div>
+          <div class="certs-grid" id="certsGrid"></div>
+        </section>
+
+        <!-- Service & Leadership -->
+        <section class="content-section" id="service" aria-labelledby="serviceHeading">
+          <div class="section-header">
+            <div class="section-icon"><i class="fa-solid fa-hands-holding-circle" aria-hidden="true"></i></div>
+            <h2 class="section-title" id="serviceHeading">Service, Leadership &amp; Training</h2>
+          </div>
+          <div class="grouped-grid" id="serviceGrid"></div>
+        </section>
+
+        <!-- Education -->
+        <section class="content-section" id="education" aria-labelledby="educationHeading">
+          <div class="section-header">
+            <div class="section-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></div>
+            <h2 class="section-title" id="educationHeading">Education</h2>
+          </div>
+          <div class="education-grid" id="educationGrid"></div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="page-footer">
+        <div class="footer-content">
+          <p>© <span id="currentYear">2025</span> Stanislava Gardasevic.</p>
+          <p class="footer-links">
+            <a href="#summary">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast" role="alert" aria-live="polite">
+      <i class="fa-solid fa-circle-check toast-icon"></i>
+      <span id="toastMessage">Copied to clipboard!</span>
+    </div>
+  </body>
+</html>
